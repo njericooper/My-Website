@@ -6,7 +6,7 @@ body {
   font: 300 100% 'Helvetica Neue', Helvetica, Arial;
 }
 
-.container {
+.nav {
   width: 50%;
   margin: 0 auto;
 }
@@ -41,7 +41,7 @@ hr {
   height: .25rem;
   width: 25%;
   margin: 0;
-  background: #011;
+  background: #111;
   border: none;
   transition: .3s ease-in-out;
 }

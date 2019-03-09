@@ -1,47 +1,55 @@
-* {
-  box-sizing: border-box;
+html, body {
+  height: 100%;
+}
+
+header{
+  font-size: 36px;
+  text-align: center;
+  color: #0c0c0c;
+  padding: 30px;
 }
 
 body {
-  font: 300 100% 'Helvetica Neue', Helvetica, Arial;
-}
-
-.nav {
-  width: 50%;
-  margin: 0 auto;
-}
-
-ul li {
-  display: inline;
+  font-family: Arial Black, Helvetica, sans-serif;
   text-align: center;
+  background-image: linear-gradient(#ffffff, #f4c6c9);
+  background-repeat: no-repeat;
 }
-
-a {
+ .panel {
   display: inline-block;
-  width: 25%;
-  padding: .75rem 0;
-  margin: 0;
-  text-decoration: none;
-  color: #333;
+  border-radius: 5px;
+  padding: 20px;
 }
 
-.about:hover ~ hr {
-  margin-left: 25%;
+input[type=text]  {
+  text-align: center;
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
-.work:hover ~ hr {
-  margin-left: 50%;
+input[type=text]:focus {
+  text-align: center;
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #fd3776;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
-.contact:hover ~ hr {
-  margin-left: 75%;
-}
-
-hr {
-  height: .25rem;
-  width: 25%;
-  margin: 0;
-  background: #111;
+button {
+  width: 100%;
+  cursor: pointer;
+  background-color: #fdca03;
+  padding: 14px 20px;
+  margin: 8px 0;
   border: none;
-  transition: .3s ease-in-out;
+  border-radius: 4px;
+  cursor: pointer;
 }

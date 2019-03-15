@@ -56,6 +56,26 @@ header{
 .who{
     text-align: center;
 }
+
+.what-left{
+    float: left;
+    padding: 50px;
+    margin: 50px;
+}
+
+.what-right{
+    float: right;
+    align-content: center;
+    align-items: center;
+}
+
+.works-title{
+    display: flex;
+    text-align: center;
+    align-content: center;
+
+}
+
 .footer {
     background: #67d5cb;
     position: fixed;
@@ -88,7 +108,11 @@ form{
 }
 
 .form-input{
-    float: left;
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
 }
 
 .btn{

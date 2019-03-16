@@ -17,8 +17,6 @@ html, body {
 
 .primary-nav{
     width: 25%;
-    height: 25vh;
-    min-height: 200px;
     overflow: auto;
     position: fixed;
     top: 5%;
@@ -59,6 +57,12 @@ a:hover{
     line-height: 26px;
 }
 
+.who-title{
+    padding: 15px 0px;
+    margin: 20px 0px;
+    text-transform: uppercase;
+}
+
 .background-img {
     background-image: url(https://images.unsplash.com/photo-1505833987950-1b45b76beac8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80);
     height: 100%;
@@ -90,23 +94,27 @@ p{
 .what{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px 50px;
+    margin: 0px 50px;
 }
 
 .what-left {
     display: flex;
-    flex: 1;
-    padding: 50px;
-    margin: 50px;
+    flex-direction: row;
+    flex-grow: 1;
 }
 
 .what-right {
     display: flex;
-    flex: 2;
+    flex-direction: row;
+    flex-grow: 1;
 }
 
 .works-title{
     display: flex;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .footer {
@@ -123,6 +131,8 @@ p{
 
 .footer-header {
     font-size: 18px;
+    margin: 10px;
+    padding: 10px 20px;
 }
 
 .footer-left {
@@ -139,7 +149,6 @@ p{
 
 form {
     display: flex;
-    line-height: 1.5;
 }
 
 .form-input {
@@ -154,6 +163,7 @@ form {
 .btn {
     display: flex;
     padding: 10px 20px;
+    flex-direction: row;
     margin: 10px;
     background-color: dodgerblue;
     border: 1px solid #ddd;

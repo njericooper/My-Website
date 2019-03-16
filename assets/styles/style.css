@@ -1,5 +1,5 @@
 html, body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     height: 100%;
     margin: 0;
     background-color: #f7f9f0;
@@ -15,17 +15,38 @@ html, body {
     background-color: rgba(0, 0, 0, 0.8);
 }    
 
-nav {
+.primary-nav{
     width: 25%;
     height: 25vh;
     min-height: 200px;
     overflow: auto;
     position: fixed;
     top: 5%;
-    background-color: transparent;
     color: white;
     padding: 15px;
   }
+
+.nav-item {
+    background:transparent;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+}  
+
+a{
+    font-size: 30px;
+    color: #e3ded3;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #e2cd48;
+}
  
 .who, p, {
     color: #0c0c0c;
@@ -66,10 +87,14 @@ p{
     line-height: 1.5;
 }
 
+.what{
+    display: flex;
+    flex-direction: row;
+}
+
 .what-left {
     display: flex;
     flex: 1;
-    float: left;
     padding: 50px;
     margin: 50px;
 }
@@ -77,8 +102,6 @@ p{
 .what-right {
     display: flex;
     flex: 2;
-    align-content: center;
-    align-items: center;
 }
 
 .works-title{

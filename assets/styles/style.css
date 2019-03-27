@@ -15,7 +15,7 @@ html, body {
     background-color: rgba(0, 0, 0, 0.8);
 }    
 
-.primary-nav{
+.primary-nav {
     width: 25%;
     overflow: auto;
     position: fixed;
@@ -32,7 +32,7 @@ html, body {
     list-style: none;
 }  
 
-a{
+a {
     font-size: 30px;
     color: #e3ded3;
     text-decoration: none;
@@ -46,9 +46,10 @@ a:hover{
     color: #e2cd48;
 }
  
-.who, p, {
+.who {
+    font-size: 20px;
+    text-align: center;
     color: #0c0c0c;
-    height: 100%;
     overflow: scroll;
     display: block;
     margin: 10px 50px;
@@ -80,43 +81,18 @@ a:hover{
     line-height: 1.8;
     text-align: center;
     text-transform: uppercase;
- 
-}
-.who {
-    text-align: center;
-    margin: 0 25%;
 }
 
-p{
-    line-height: 1.5;
-}
-
-.what{
+.what {
     display: flex;
-    flex-direction: row;
+    flex-basis: row wrap;
     justify-content: space-evenly;
-    padding: 0px 50px;
-    margin: 0px 50px;
-}
 
-.what-left {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
 }
 
 .what-right {
     display: flex;
-    flex-direction: row;
-    flex-grow: 1;
 }
-
-.works-title{
-    display: flex;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 .footer {
     display: flex;
     flex-direction: row;
@@ -129,31 +105,13 @@ p{
     height: 50px;
 }  
 
-.footer-header {
-    font-size: 18px;
-    margin: 10px;
-    padding: 10px 20px;
-}
-
-.footer-left {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-}
-
-.footer-right {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-}
-
 form {
     display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 .form-input {
-    display: flex;
-    flex-direction: row;
     margin: 10px;
     padding: 10px;
     background-color: #fff;
@@ -161,9 +119,7 @@ form {
 }
 
 .btn {
-    display: flex;
     padding: 10px 20px;
-    flex-direction: row;
     margin: 10px;
     background-color: dodgerblue;
     border: 1px solid #ddd;

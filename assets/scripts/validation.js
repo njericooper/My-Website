@@ -5,3 +5,7 @@ if( /(.+)@(.+){2,}\.(.+){2,}/.test(email) ){
 } else {
   // invalid email
 }
+
+function myFunction(x) {
+  x.classList.toggle("change");
+}

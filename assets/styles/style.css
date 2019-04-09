@@ -2,65 +2,28 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     height: 100%;
     margin: 0;
-    background-color: #f7f9f0;
 }
-
-.overlay {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.8);
-}    
-
-.primary-nav {
-    width: 25%;
-    overflow: auto;
-    position: fixed;
-    top: 5%;
-    color: white;
-    padding: 15px;
-  }
-
-.nav-item {
-    background:transparent;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    list-style: none;
-}  
-
-a {
-    font-size: 30px;
-    color: #e3ded3;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 2;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-a:hover{
-    color: #e2cd48;
-}
- 
+  
 .who {
-    font-size: 20px;
-    text-align: center;
+    text-align: left;
     color: #0c0c0c;
-    overflow: scroll;
-    display: block;
-    margin: 10px 50px;
-    padding: 0px 50px;
-    font-size: 18px;
-    line-height: 26px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0% 24%;
+    font-weight: 200;
 }
 
-.who-title{
+.title{
+    text-align: center;
     padding: 15px 0px;
     margin: 20px 0px;
+    text-transform: uppercase;
+}
+
+.works-title{
+    padding: 50px;
+    margin: 50px;
     text-transform: uppercase;
 }
 
@@ -84,15 +47,10 @@ a:hover{
 }
 
 .what {
-    display: flex;
-    flex-basis: row wrap;
-    justify-content: space-evenly;
+    text-align: center;
 
 }
 
-.what-right {
-    display: flex;
-}
 .footer {
     display: flex;
     flex-direction: row;
@@ -126,28 +84,383 @@ form {
     color: white;
     cursor: pointer; 
 }
+/* ----------- iPhone 4 and 4S ----------- */
 
-.mobile-nav {
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-  }
-  
-  .change .bar2 {opacity: 0;}
-  
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-  }
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .who {
+        font-size: 15px;
+        text-align: center;
+        color: #0c0c0c;
+        overflow: scroll;
+        display: block;
+    }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .who {
+        font-size: 15px;
+        text-align: center;
+        color: #0c0c0c;
+        overflow: scroll;
+        display: block;
+
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .who {
+        font-size: 15px;
+        text-align: center;
+        color: #0c0c0c;
+        overflow: scroll;
+        display: block;
+    }
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .who {
+        font-size: 15px;
+        text-align: center;
+        color: #0c0c0c;
+        overflow: scroll;
+        display: block;
+        padding: 2%;
+    }
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .who {
+        font-size: 15px;
+        text-align: center;
+        color: #0c0c0c;
+        overflow: scroll;
+        display: block;
+        padding: 2%;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .who {
+        font-size: 15px;
+        text-align: center;
+        color: #0c0c0c;
+        overflow: scroll;
+        display: block;
+        padding: 2%;
+
+    }
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .who {
+        font-size: 16px;
+        text-align: center;
+        color: #0c0c0c;
+        overflow: scroll;
+        display: block;
+        padding: 2%;
+    }
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    .who {
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        color: #0c0c0c;
+        overflow: scroll;
+        display: block;
+        padding: 2%;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    .who {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #0c0c0c;
+        overflow: scroll;
+        display: block;
+        padding: 2%;
+    }
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .who {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #0c0c0c;
+        overflow: scroll;
+        display: block;
+        padding: 2%;
+    }
+    .background-img, .caption-border {
+        height: 65%;
+    }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .who {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #0c0c0c;
+        overflow: scroll;
+        display: block;
+        padding: 2%;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .who {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #0c0c0c;
+        overflow: scroll;
+        display: block;
+        padding: 2%;
+    }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .who {
+        font-size: 18px;
+        text-align: center;
+        color: #0c0c0c;
+        overflow: scroll;
+        display: block;
+        padding: 2%;
+    }
+    .background-img, .caption-border {
+        height: 65%;
+        justify-content: center;
+    }
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .who {
+        font-size: 18px;
+        text-align: center;
+        color: #0c0c0c;
+        overflow: scroll;
+        display: block;
+        padding: 2%;
+    }
+    .background-img, .caption-border {
+        height: 65%;
+        justify-content: center;
+        align-self: center;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .who {
+        font-size: 18px;
+        text-align: center;
+        color: #0c0c0c;
+        overflow: scroll;
+        display: block;
+        padding: 2%;
+    }
+    .background-img, .caption-border {
+        height: 75%;
+    }
+}
+
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 834px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 1112px) 
+  and (max-device-width: 1112px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}

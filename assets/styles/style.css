@@ -304,6 +304,7 @@ form {
     .background-img, .caption-border {
         height: 50%;
         justify-content: center;
+        align-items: center;
     }
     .last {
         padding-bottom: 15%;
@@ -312,4 +313,28 @@ form {
         font-size: 25px;
     }
 
+}
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .background-img, .caption-border {
+        height: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    .background-img, .caption-border {
+        height: 80%;
+        justify-content: center;
+        align-items: center;
+    }
 }

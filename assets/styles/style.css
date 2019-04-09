@@ -21,11 +21,6 @@ html, body {
     text-transform: uppercase;
 }
 
-.works-title{
-    padding: 50px;
-    margin: 50px;
-    text-transform: uppercase;
-}
 
 .background-img {
     background-image: url(https://images.unsplash.com/photo-1505833987950-1b45b76beac8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80);
@@ -48,8 +43,24 @@ html, body {
 
 .what {
     text-align: center;
-
 }
+.last {
+    padding-bottom: 15%;
+}
+
+
+.links{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    line-height: 40px;
+}
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
 
 .footer {
     display: flex;

@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Footer</title>
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
 </head>
 <body>
-    <form data-email-list="" action="">
-        <div class="form-group">
-            <input type="text" class="form-input" name="email" id="emailInput" value="" placeholder="email@something.com">
-        </div>
-        <button type="submit" class="btn btn-default">Subscribe</button>
+    <div class="container">
+        <form id="singular-form">
+            <button class="shown" type="button" id="trigger">Notify me</button>
+    
+            <div id="input-container">
+                <input type="text" placeholder="E-mail">
+                <button type="button">Send</button>
+            </div>
+    
+            <div id="success">Thank you!</div>
+    
         </form>
+    </div>        
     <footer class="footer">
             
     </footer> 
+    <script src="assets/scripts/footer.js"></script>
 </body>
 </html>

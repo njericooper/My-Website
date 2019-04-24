@@ -1,9 +1,9 @@
 :root {
-    --main-color: white;
-    --accent-color: dodgerblue;
+    --main-color: #dfe4d4;
+    --accent-color: #71c0b3;
 }
 
-body {
+.email-container {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -12,7 +12,7 @@ body {
     background-color: var(--accent-color);
 }
 
-body,
+.email-container,
 #singular-form button,
 .container>#singular-form>#input-container>input {
     font-size: 2rem;

@@ -1,26 +1,24 @@
-:root {
-    --main-color: #dfe4d4;
-    --accent-color: #71c0b3;
-}
-
 .email-container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
+    --main-color: white;
+    --accent-color: #71c0b3;
     background-color: var(--accent-color);
+    overflow: hidden;
 }
 
 .email-container,
 #singular-form button,
-.container>#singular-form>#input-container>input {
+.email_container>#singular-form>#input-container>input {
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
-.container {
+.email_container{
     width: 19rem;
     height: 5rem;
     padding: 10px;
@@ -31,14 +29,14 @@
     transition: width .4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.container>#singular-form {
+.email_container>#singular-form {
     position: relative;
     width: 100%;
     height: 100%;
     background-color: --main-color;
 }
 
-.container>#singular-form button {
+.email_container>#singular-form button {
     width: 9rem;
     padding: 0;
     border: none;
@@ -47,7 +45,7 @@
     cursor: pointer;
 }
 
-.container>#singular-form>button#trigger {
+.email_container>#singular-form>button#trigger {
     padding: 0;
     width: 100%;
     color: var(--accent-color);
@@ -55,11 +53,11 @@
     z-index: 3;
 }
 
-.container>#singular-form>#input-container {
+.email_container>#singular-form>#input-container {
     z-index: 2;
 }
 
-.container>#singular-form>#input-container>input {
+.email_container>#singular-form>#input-container>input {
     display: inline-block;
     height: 100%;
     width: 100%;
@@ -73,7 +71,7 @@
     transition: all .4s ease .4s;
 }
 
-.container>#singular-form>#input-container>button {
+.email_container>#singular-form>#input-container>button {
     position: absolute;
     top: 0;
     right: 0;
@@ -85,7 +83,7 @@
     transition: all .4s ease .4s;
 }
 
-.container>#singular-form>#success {
+.email_container>#singular-form>#success {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,9 +92,9 @@
     z-index: 1;
 }
 
-.container>#singular-form>button#trigger,
-.container>#singular-form>#input-container,
-.container>#singular-form>#success {
+.email_container>#singular-form>button#trigger,
+.email_container>#singular-form>#input-container,
+.email_container>#singular-form>#success {
     position: absolute;
     top: 0;
     right: 0;
@@ -106,25 +104,38 @@
     opacity: 0;
 }
 
-.container>#singular-form>button#trigger {
+.email_container>#singular-form>button#trigger {
     transition: all .4s ease;
 }
 
-.container>#singular-form>#input-container {
+.email_container>#singular-form>#input-container {
     transform: scale(1);
     opacity: 1;
     transition: all .4s ease .4s;
 }
 
-.container>#singular-form>#success {
+.email_container>#singular-form>#success {
     transition: all .2s ease .4s;
 }
 
-.container>#singular-form>button#trigger.shown,
-.container>#singular-form>#input-container.shown,
-.container>#singular-form>#success.shown,
-.container>#singular-form>#input-container>button.shown,
-.container>#singular-form>#input-container>input.shown {
+.email_container>#singular-form>button#trigger.shown,
+.email_container>#singular-form>#input-container.shown,
+.email_container>#singular-form>#success.shown,
+.email_container>#singular-form>#input-container>button.shown,
+.email_container>#singular-form>#input-container>input.shown {
     transform: scale(1);
     opacity: 1;
 }
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: #dfe4d4;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    font-size: 1rem;
+  }

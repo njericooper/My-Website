@@ -13,7 +13,7 @@ yo.clickHandler = (e) => {
     switch (e.target) {
         case yo.trigger:
             console.log('case trigger');
-            yo.email_container.style.width = '37rem'
+            yo.email_container.style.width = '37rem';
             e.target.classList.remove('shown');
             yo.input.classList.add('shown');
             yo.submitButton.classList.add('shown');

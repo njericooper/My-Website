@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "posts": {
+      ".read": true,
+      ".write": "auth.uid === '4efvi2l3UjeU3i6JaXj0SixeUdA2'"
+    }
+  }
+}

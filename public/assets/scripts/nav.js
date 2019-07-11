@@ -1,4 +1,3 @@
-/*http://callmenick.com/post/expanding-search-bar-using-css-transitions*/
 (function($) {
   "use strict";
 

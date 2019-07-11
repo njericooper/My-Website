@@ -5,11 +5,10 @@ html {
 html, body {
   font-family: 'Open Sans', sans-serif;
   height: 100%;
-  min-height: 100%;
   margin: 0;
   padding: 0;
+  
 }
-
 
 .OgCoop {
   background: 
@@ -46,6 +45,9 @@ html, body {
   box-sizing: border-box;
 }
 
+p{
+  padding: 0 15%;
+}
 
 .section {
   position: relative;
@@ -53,24 +55,25 @@ html, body {
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
 }
 
 .section-1 {
-  background-color: #fcfef0;
+  background-color: white;
+  padding-bottom: 5%;
 }
 
 .section-2 {
   background: url(https://vignette.wikia.nocookie.net/steven-universe/images/e/ed/Steven_the_Swordfighter_Cloud_Temple_Background.jpg/); 
   background-size: cover;     
   background-attachment: fixed;
+  min-height: 40%;
+  max-height: 50%;
 }
-
 
 .nav {
   transition: all .5s ease;
-  font-size: 12px;
+  font-size: .8em;
   font-family: 'Open Sans', sans-serif;
   width: 100%;
   z-index: 100;
@@ -82,6 +85,7 @@ html, body {
   transition-timing-function: cubic-bezier(0.78, 0.13, 0.15, 0.86);
   transition-duration: 0.3s;
 }
+
 .nav .brand {
   line-height: 100px;
   padding-left: 60px;
@@ -110,12 +114,14 @@ html, body {
   cursor: pointer;
   line-height: 30px;
 }
+
 .nav ul li:hover a {
   font-weight: bold;
   color: #76fcee;
 }
+
 .nav ul li a {
-  color: #eee;
+  color: white; /*white*/
   text-decoration: none;
 }
 
@@ -129,12 +135,6 @@ html, body {
 .sticky .brand {
   line-height: 60px;
 }
-.sticky ul li a {
-  color: #6E7982;
-}
-.sticky ul li:hover a {
-  color: #4473a2;
-}
 
 .menu {
   display: none;
@@ -145,26 +145,52 @@ html, body {
   padding: 25px 0px;
   margin: 0px;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+  color: #33616b;
 }
 
 
+.contact-container {
+  margin-top: -1em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: #71c0b3;
+  overflow: hidden;
+  padding-bottom: 10%;
+}
 
-/*footer*/
+.links {
+  display:flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  padding-bottom: 5%;
+}
+.links>a{
+  color: black;
+  text-decoration: none;
+  padding-bottom: 20%;
+}
+
 .footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  background: #67d5cb;
+  flex-flow: row nowrap;
+  justify-content: center;
+  background: #dfe4d4;
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
   height: 50px;
+  font-size: 1rem;
+  width: 100%;
+  z-index: 4;
 }
-
-
-
-
 
 
 @media (max-width: 600px) {
@@ -252,6 +278,7 @@ html, body {
   ul.navbar {
     transform: translate(-100%, 0);
     padding-left: 0;
+  
   }
   ul.navbar li {
     line-height: calc((100vh - 60px) / 6);
@@ -276,14 +303,160 @@ html, body {
   #nav {
     height: 100px;
   }
+  .nav ul li a {
+    color:#3e6897;
+  }
+
+  /*.nav ul li:hover a {
+    color: #e5bdaa;
+  }*/
+  
   #nav.open {
     height: auto;
     min-height: 100%;
+    background-color: #fcfef1;
+
   }
   #nav.sticky {
     height: 60px;
   }
-  #nav .open.sticky {
+
+  #nav.open.sticky {
     height: auto;
   }
+}
+
+
+
+
+
+
+
+
+.bio-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  /*box-shadow: 1em .8em .8em grey;*/
+  justify-content: baseline;
+  
+}
+
+.info-container {
+  order: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  color: #FDFEF6;
+  line-height: 1.7em;
+}
+.info-right {
+  float: right;
+  padding-left: 5%;
+}
+
+.info-left {
+  float: left;
+  padding-left: 5%;
+}
+
+.image, .bio-container {
+  min-width: 200px;
+  /*height: 45vh;*/
+  min-height: 250px;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+
+.short-bio{
+  padding-right: 25%;
+}
+
+
+.social-media-div {
+  order: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social-links{
+  padding-top: 2em;
+  padding-right: 5em;
+  align-content: space-between;
+  color: #33616b;
+}
+
+.social-links:link {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 414px) {
+  .article-container{
+      margin: 0;
+      padding: 0;
+      line-height: 1.7rem;
+      font-size: 1rem;
+  }
+  
+  .blog-post-container{
+      padding: 0 5% 0; 
+  }
+
+  .bio-container{
+      display: flex;
+      flex-basis: column nowrap;
+      height: 50%;
+      /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+      text-align: center;
+  }
+
+  .image{
+      width: 100%;
+      height: 11em;
+      min-height: 8em;
+      background-position: center;
+      object-fit: cover;
+  }
+  
+  .image, .bio-container{
+      padding: 0;
+      margin: 0;
+      min-width: 100vw;
+  }
+
+  .info-container {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .info-right {
+      padding: 0;
+  }
+
+  .short-bio{
+      padding: 0 5% 0;
+  }
+
+  .social-media-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      align-self: center;
+  }
+
+  .social-links {
+      color: #ffb8c0;
+      padding: 1em;
+  }
+
 }

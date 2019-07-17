@@ -1,1 +1,3 @@
-document.getElementById("footerText").innerHTML = new Date().getFullYear();
+var date = new Date();
+var theYear = date.getFullYear();
+document.getElementById("footerText").innerHTML = theYear;

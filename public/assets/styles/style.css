@@ -1,12 +1,9 @@
-html {
-  scroll-behavior: smooth;
-}
-
 html, body {
   font-family: 'Open Sans', sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🤘</text></svg>") 16 0,auto;
 }
 
 .OgCoop {
@@ -40,8 +37,7 @@ html, body {
 .intro {
   margin: 0 auto;
   width: 200px;
-  
-  /*font-size: 1rem;*/
+
 }
 
 .headshot {
@@ -54,33 +50,18 @@ p{
   padding: 0 15%;
 }
 
-section {
+.section-1 {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   width: 100%;
-
-}
-
-.section-1 {
   background-color: #fffff2;
-  padding-bottom: 5%;
+  color: #191434;
   text-align: center;
   kerning: 1em;
   line-height: 1.7em;
-}
-
-.section-2 {
-  /*background: url(https://vignette.wikia.nocookie.net/steven-universe/images/e/ed/Steven_the_Swordfighter_Cloud_Temple_Background.jpg/);
-  background-size: cover;     
-  background-attachment: fixed;*/
-  background-color: #feb6c1;
-  min-height: 40%;
-  display: flex;
-  flex-flow: column nowrap;
-  padding-bottom: 5%;
 }
 
 .title{
@@ -90,32 +71,87 @@ section {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2em;
-  color: #3E6897;
+  color: #222491;
 }
 
-button{
-  width: 75%;
-  align-self: center;
-  padding: 1em;
-  margin-bottom: 2em;
-  font-size: 2em;
-  background-color: #fffff2 ;
-  cursor: pointer;
+.contact-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-auto-rows: auto auto auto auto;
+  grid-template-areas: "github codepen devto twitter";
+  padding: 0;
+  height: 400px;
 }
 
-button:hover {
-  box-shadow: 0 .8em 1em 0 rgba(0,0,0,0.24), 0 1.1em 3.5em 0 rgba(0,0,0,0.19);
-  background-color: #58d7d5;
-}
-
-button a {
+a {
+  font-size: 1.5em;
   text-decoration: none;
-  color: #3E6897;
+  padding-bottom: 2%;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>") 16 0,auto;
 }
 
-button:hover a {
-  color:  #fffff2;
+.github {
+  display: grid;
+  height:100%;
+  width: 100%;
+  background-color: #77041d; 
+  align-items: center;
+  justify-items: center;
 }
+
+.github a {
+  color: #fffff2;
+}
+
+.codepen {
+  display: grid;
+  height:100%;
+  width: 100%;
+  background-color: #A5257A;
+  align-items: center;
+  justify-items: center;
+}
+.codepen a {
+  color: #FAC7F8;
+  
+}
+
+
+.devto {
+  display: grid;
+  height: 100%;
+  width:100%;
+  background-color: #FA58FA;
+  align-items: center;
+  justify-items: center;
+}
+
+.devto a {
+  color: #222491;
+  
+}
+
+.twitter {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  background-color: #FAC7F8;
+  align-items: center;
+  justify-items: center;
+}
+
+.twitter a {
+  color: #A5257A;
+}
+
+
+.github { grid-area: github; }
+
+.codepen { grid-area: codepen; }
+
+.devto { grid-area: devto; }
+
+.twitter { grid-area: twitter; }
 
 .footer {
   display: flex;
@@ -123,8 +159,8 @@ button:hover a {
   flex-wrap: nowrap;
   justify-content: center;
   text-align: center;
-  background: #3E6897;;
-  color: #fffff2;
+  background: #222491;
+  color: #FAC7F8;
   position: fixed;
   left: 0;
   right: 0;
@@ -137,8 +173,17 @@ button:hover a {
 }
 
 @media only screen and (max-width: 414px) {
+  .contact-container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "github codepen" "devto twitter";
+  }
+
+  .devto, .twitter {
+    padding-bottom: 15%;
+  }
+
   .footer{
     flex-wrap: wrap;
   }
-
 }

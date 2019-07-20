@@ -7,7 +7,6 @@ html, body {
 }
 
 .OgCoop {
-  display: flex;
   background: 
   linear-gradient(
     to bottom,
@@ -24,29 +23,29 @@ html, body {
 }
 
 .intro {
-  justify-self: center;
+  padding-top: 2%;
+  display: grid;
   margin: 0 auto;
   color: white;
   bottom: 0;
-  left: 0;
   width: 100%;
-  padding: 20px 10px;
+  align-items: center;
+  justify-items: center;
 }
 
 .headshot {
-  height: 200px;
-  width: 200px;
+  height: 15rem;
+  width: 15rem;
   border-radius: 50%;
 }
 
-p{
+p {
   padding: 0 15%;
 }
 
 .link-logo{
   max-width: 4rem;
   max-height: 4rem;
-  
 }
 
 .main {
@@ -63,7 +62,7 @@ p{
   line-height: 1.7em;
 }
 
-.title{
+.greetings{
   text-align: center;
   padding: 25px 0px;
   margin: 0px;
@@ -89,13 +88,17 @@ a {
   cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>") 16 0,auto;
 }
 
-.github {
+.tab{
   display: grid;
   height:100%;
   width: 100%;
-  background-color: #77041d; 
   align-items: center;
   justify-items: center;
+}
+
+.github {
+  background-color: #77041d; 
+  grid-area: github;
 }
 
 .github:hover {
@@ -103,12 +106,8 @@ a {
 }
 
 .codepen {
-  display: grid;
-  height:100%;
-  width: 100%;
   background-color: #A5257A;
-  align-items: center;
-  justify-items: center;
+  grid-area: codepen;
 }
 .codepen a {
   color: #FAC7F8; 
@@ -119,12 +118,8 @@ a {
 }
 
 .devto {
-  display: grid;
-  height: 100%;
-  width:100%;
   background-color: #FA58FA;
-  align-items: center;
-  justify-items: center;
+  grid-area: devto;
 }
 
 .devto:hover {
@@ -132,30 +127,13 @@ a {
 }
 
 .twitter {
-  display: grid;
-  height: 100%;
-  width: 100%;
   background-color: #FAC7F8;
-  align-items: center;
-  justify-items: center;
+  grid-area: twitter;
 }
 
 .twitter:hover{
   background-color: #29EBF2;
 }
-
-.twitter a {
-  color: #A5257A;
-}
-
-
-.github { grid-area: github; }
-
-.codepen { grid-area: codepen; }
-
-.devto { grid-area: devto; }
-
-.twitter { grid-area: twitter; }
 
 .footer {
   display: flex;
@@ -177,6 +155,11 @@ a {
 }
 
 @media only screen and (max-width: 414px) {
+
+  .intro{
+    padding-top: 5%;
+  }
+
   .contact-container{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;

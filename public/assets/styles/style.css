@@ -7,6 +7,7 @@ html, body {
 }
 
 .OgCoop {
+  display: flex;
   background: 
   linear-gradient(
     to bottom,
@@ -22,22 +23,14 @@ html, body {
   margin: 0;
 }
 
-.OgCoop > div {
-  position: absolute;
+.intro {
+  justify-self: center;
+  margin: 0 auto;
+  color: white;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 20px 10px;
-}
-
-.OgCoop > div h1,
-.OgCoop > div h2 {
-  color: white;
-}
-.intro {
-  margin: 0 auto;
-  width: 200px;
-
 }
 
 .headshot {
@@ -50,7 +43,13 @@ p{
   padding: 0 15%;
 }
 
-.section-1 {
+.link-logo{
+  max-width: 4rem;
+  max-height: 4rem;
+  
+}
+
+.main {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -99,8 +98,8 @@ a {
   justify-items: center;
 }
 
-.github a {
-  color: #fffff2;
+.github:hover {
+  background-color: #3E6897;
 }
 
 .codepen {
@@ -112,10 +111,12 @@ a {
   justify-items: center;
 }
 .codepen a {
-  color: #FAC7F8;
-  
+  color: #FAC7F8; 
 }
 
+.codepen:hover {
+  background-color: #0E6F73;
+}
 
 .devto {
   display: grid;
@@ -126,9 +127,8 @@ a {
   justify-items: center;
 }
 
-.devto a {
-  color: #222491;
-  
+.devto:hover {
+  background-color: #32C7B0;
 }
 
 .twitter {
@@ -138,6 +138,10 @@ a {
   background-color: #FAC7F8;
   align-items: center;
   justify-items: center;
+}
+
+.twitter:hover{
+  background-color: #29EBF2;
 }
 
 .twitter a {

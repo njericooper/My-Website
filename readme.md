@@ -1,5 +1,4 @@
-# <center> Njeri Cooper's Website <center>
-![alt text]()
+![alt text](https://github.com/njericooper/My-Website/blob/master/readme-header.png?raw=true)
 
 ## Tools used
 

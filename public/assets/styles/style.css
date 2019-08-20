@@ -1,12 +1,14 @@
 html, body {
   font-family: 'Open Sans', sans-serif;
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
+  background-color: #fffff2;
   cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🤘</text></svg>") 16 0,auto;
 }
 
-.OgCoop {
+.theme-header {
   background: 
   linear-gradient(
     to bottom,
@@ -22,7 +24,7 @@ html, body {
   margin: 0;
 }
 
-.intro {
+.header-content {
   padding-top: 2%;
   display: grid;
   margin: 0 auto;
@@ -39,13 +41,8 @@ html, body {
   border-radius: 50%;
 }
 
-p {
+.main-text {
   padding: 0 15%;
-}
-
-.link-logo{
-  max-width: 4rem;
-  max-height: 4rem;
 }
 
 .main {
@@ -55,30 +52,37 @@ p {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: #fffff2;
   color: #191434;
   text-align: center;
   kerning: 1em;
   line-height: 1.7em;
 }
 
-.greetings{
+.title {
   text-align: center;
-  padding: 25px 0px;
-  margin: 0px;
+  padding: 1em 0em;
+  margin: 0em;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2em;
   color: #222491;
 }
 
-.contact-container {
+.tab-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-auto-rows: auto auto auto auto;
   grid-template-areas: "github codepen devto twitter";
-  padding: 0;
-  height: 400px;
+  padding: 2em 0;
+  height: 30rem;
+}
+
+.tab {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
 }
 
 a {
@@ -88,12 +92,9 @@ a {
   cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>") 16 0,auto;
 }
 
-.tab{
-  display: grid;
-  height:100%;
-  width: 100%;
-  align-items: center;
-  justify-items: center;
+.link-logo {
+  max-width: 4rem;
+  max-height: 4rem;
 }
 
 .github {
@@ -109,6 +110,7 @@ a {
   background-color: #A5257A;
   grid-area: codepen;
 }
+
 .codepen a {
   color: #FAC7F8; 
 }
@@ -156,14 +158,19 @@ a {
 
 @media only screen and (max-width: 414px) {
 
-  .intro{
+  .header-content{
     padding-top: 5%;
   }
 
-  .contact-container{
+  .tab-container{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "github codepen" "devto twitter";
+    height: 20rem;
+  }
+
+  .github, .codepen {
+    height: 100%;
   }
 
   .devto, .twitter {

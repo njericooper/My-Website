@@ -1,19 +1,20 @@
-html, body {
-  font-family: 'Open Sans', sans-serif;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #fffff2;
-  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🤘</text></svg>") 16 0,auto;
+.header-background {
+  background: 
+    linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.8)
+    ), url(https://preview.redd.it/1sl7nsez7nry.png?width=960&crop=smart&auto=webp&s=7214de5636c1bdaa910f9af5991435394b8a4a29) no-repeat;
+    min-height: 400px;
+}
+
+.header-content{
+  padding-top: 2%;
 }
 
 .nav {
   color: white;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  padding-right: 1em;
+  
 }
 
 .menu-item {
@@ -28,33 +29,6 @@ html, body {
   color: #FAC7F8;
 }
 
-.theme-header {
-  background: 
-  linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.8)
-  ), url(https://preview.redd.it/1sl7nsez7nry.png?width=960&crop=smart&auto=webp&s=7214de5636c1bdaa910f9af5991435394b8a4a29) no-repeat;
-  width: 100%;
-  min-height: 400px;
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
-  background-attachment: fixed;
-  margin: 0;
-}
-
-.header-content {
-  padding-top: 2%;
-  display: grid;
-  margin: 0 auto;
-  color: white;
-  bottom: 0;
-  width: 100%;
-  align-items: center;
-  justify-items: center;
-}
-
 .headshot {
   height: 15rem;
   width: 15rem;
@@ -63,19 +37,6 @@ html, body {
 
 .main-text {
   padding: 0 15%;
-}
-
-.main {
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  color: #191434;
-  text-align: center;
-  kerning: 1em;
-  line-height: 1.7em;
 }
 
 .title {
@@ -105,16 +66,9 @@ html, body {
   justify-items: center;
 }
 
-a {
-  font-size: 1.5em;
-  text-decoration: none;
-  padding-bottom: 2%;
-  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>") 16 0,auto;
-}
-
 .link-logo {
-  max-width: 4rem;
-  max-height: 4rem;
+  max-width: 6rem;
+  max-height: 6rem;
 }
 
 .github {
@@ -135,7 +89,7 @@ a {
   color: #FAC7F8; 
 }
 
-.codepen:hover {
+.codepen-in-focus:hover {
   background-color: #0E6F73;
 }
 
@@ -157,25 +111,6 @@ a {
   background-color: #29EBF2;
 }
 
-.footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  text-align: center;
-  background: #222491;
-  color: #FAC7F8;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 50px;
-  font-size: 1rem;
-  width: 100%;
-  z-index: 4;
-  align-items: center;
-}
-
 @media only screen and (max-width: 414px) {
 
   .header-content{
@@ -189,12 +124,17 @@ a {
     height: 20rem;
   }
 
+  .link-logo {
+    max-width: 4rem;
+    max-height: 4rem;
+  }
+
   .github, .codepen {
     height: 100%;
   }
 
   .devto, .twitter {
-    padding-bottom: 15%;
+    padding-bottom: 20%;
   }
 
   .footer{

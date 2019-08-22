@@ -8,22 +8,6 @@
     min-height: 400px;
 }
 
-.header-content{
-  padding-top: 2%;
-}
-
-.nav {
-  color: white;
-}
-
-.menu-item {
-  list-style: none;
-}
-
-.menu-item a {
-  color: white;
-}
-
 .menu-item a:hover {
   color: #FAC7F8;
 }

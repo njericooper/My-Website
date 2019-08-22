@@ -9,9 +9,22 @@ html, body {
 }
 
 a {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-decoration: none;
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>") 16 0,auto;
+}
+
+.nav {
+    color: white;
+    padding-bottom: 5%;
+}
+
+.menu-item {
+    list-style: none;
+}
+
+.menu-item a {
+    color: white;
 }
 
 .theme-header {
@@ -29,26 +42,26 @@ a {
     color: white;
     bottom: 0;
     width: 100%;
-    align-items: center;
     justify-items: center;
     text-align: center;
+    padding-top: 2%;
 }
 
 .main {
     position: relative;
-    background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     width: 100%;
-    color: #191434;
-    text-align: center;
-    kerning: 1em;
-    line-height: 1.7em;
 }
 
 .main-text {
     padding: 0 15%;
+    color: #191434;
+    text-align: center;
+    font-size: 1rem;
+    kerning: 1rem;
+    line-height: 1.7rem;
 }
 
 .footer {
@@ -59,13 +72,10 @@ a {
     text-align: center;
     background: #222491;
     color: #FAC7F8;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
     height: 50px;
     font-size: 1rem;
     width: 100%;
-    z-index: 4;
+    z-index: 1;
     align-items: center;
+    position: fixed;
 }

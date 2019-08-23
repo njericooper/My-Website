@@ -18,6 +18,10 @@
   border-radius: 50%;
 }
 
+.main-text {
+  padding-bottom: 2rem;
+}
+
 .title {
   text-align: center;
   padding: 1em 0em;
@@ -33,7 +37,7 @@
   grid-template-columns: auto auto auto auto;
   grid-auto-rows: auto auto auto auto;
   grid-template-areas: "github codepen devto twitter";
-  padding: 2em 0;
+  padding: 0;
   height: 30rem;
 }
 
@@ -112,11 +116,8 @@
     height: 100%;
   }
 
-  .devto, .twitter {
-    padding-bottom: 20%;
-  }
-
-  .footer{
+  .footer {
     flex-wrap: wrap;
+    position: fixed;
   }
 }

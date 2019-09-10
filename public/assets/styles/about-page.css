@@ -31,8 +31,9 @@
     linear-gradient(to bottom,
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 0.2)
-    ), url(http://ucarecdn.com/e4e17d9e-2799-4390-98ff-e77657dbd845/-/scale_crop/500x500/center/) no-repeat;
+    ), url(http://ucarecdn.com/e4e17d9e-2799-4390-98ff-e77657dbd845/-/scale_crop/500x500/center/) no-repeat; /* -/scale_crop/500x500/center/ */
     min-height: 40vh;
+    background-attachment: fixed;
 }
 
 .header-content {
@@ -42,7 +43,7 @@
 }
 
 .heading {
-    padding-top: 20%;
+    padding-top: 30%;
 }
 
 .content {
@@ -69,40 +70,13 @@
         rgba(0, 0, 0, 0.2)
         ), url(https://ucarecdn.com/3fa78a80-897a-4026-935d-230828dcddec/) no-repeat;
         height: 10%;
+        background-size: cover;
+        background-attachment: fixed;
         }
-}
 
-/* ipad and iphonex landscape */
-/*@media only screen 
-    and (min-device-width: 768px)
-    and (orientation : landscape) {
-        .header-background{
-        background: 
-        linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0.2)
-        ), url(https://ucarecdn.com/3fa78a80-897a-4026-935d-230828dcddec/) no-repeat;
-        }
-}*/
-
-/*iphoneX Landscape */
-
-@media only screen 
-    and (device-height : 375px) 
-    and (device-width : 812px)
-    and (orientation : landscape)
-    and (-webkit-device-pixel-ratio : 3) { 
-        .header-background { 
-            height: 5%;
-        }
         .heading {
-            padding: 0;
-            font-size: 1.5rem;
-        }
-
-        .content {
-            flex-direction: row;
+            padding-top: 0; 
+            font-size: 2rem;
         }
 
         .pic {
@@ -113,12 +87,50 @@
             justify-content: flex-start;
         }
 
+        .content {
+            flex-direction: row;
+            align-items: center;
+        }
+
         .context{
             align-self: center; /*baseline centers*/
             font-size: 1rem;
             line-height: 1.5rem;
             padding: 0 0 0 5%;
         }
+}
+
+/* ipad and iphonex landscape */
+@media only screen 
+    and (min-device-width: 768px)
+    and (orientation : landscape) {
+        .header-background{
+        background: 
+        linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.2)
+        ), url(https://ucarecdn.com/3fa78a80-897a-4026-935d-230828dcddec/) no-repeat;
+        }
+}
+
+/*iphoneX Landscape */
+
+@media only screen 
+    and (device-height : 375px) 
+    and (device-width : 812px)
+    and (orientation : landscape)
+    and (-webkit-device-pixel-ratio : 3) { 
+        .header-background { 
+            background-size: cover;
+            height: 5%;
+        }
+        .heading {
+            padding: 0;
+            font-size: 1.5rem;
+        }
+
+        
     }
 
 
@@ -129,7 +141,17 @@
   and (device-width: 768px) 
   and (device-height: 1024px) 
   and (orientation: portrait) {
+
+    .header-background {
+        background: 
+        linear-gradient(to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.2)
+        ), url(http://ucarecdn.com/e4e17d9e-2799-4390-98ff-e77657dbd845/) no-repeat;
+        background-size: cover;
+    }
     .heading { 
+        padding-top: 20%;
         font-size: 3rem;
     }
 }
@@ -140,17 +162,13 @@
   and (device-width: 1024px)
   and (orientation: landscape) {
     .header-background { 
+        background-size: cover;
         height: 15%;
     }
 
     .heading {
         padding-top: 2%; 
         font-size: 3rem;
-    }
-
-    .content {
-        flex-direction: row;
-        /*align-items: center;*/
     }
 
     .context {
@@ -169,19 +187,19 @@
     }
 }
 
-
-/* ----------- Non-Retina Screens ----------- */
+/* ----------- iPad Pro ----------- */
 @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-}
-
-/* ----------- Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
+    and (min-device-width: 1024px) 
+    and (orientation: portrait) { 
+        .header-background {
+            background: 
+            linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.2)
+            ), url(http://ucarecdn.com/e4e17d9e-2799-4390-98ff-e77657dbd845/-/scale_crop/1024x1024/center/) no-repeat; /* -/scale_crop/500x500/center/ */
+            object-fit: cover;
+            min-height: 40vh;
+            background-attachment: fixed;
+        }
 }
 

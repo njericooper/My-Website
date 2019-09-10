@@ -115,9 +115,4 @@
   .github, .codepen {
     height: 100%;
   }
-
-  .footer {
-    flex-wrap: wrap;
-    position: fixed;
-  }
 }

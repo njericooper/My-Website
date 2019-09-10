@@ -1,4 +1,4 @@
-.header-background {
+/*.header-background {
     background: 
         linear-gradient(
         to bottom,
@@ -9,8 +9,6 @@
 }
 
 .content {
-    padding: 5%;
-    display: flex;
     flex-direction: row;
     justify-content: baseline;
 }
@@ -26,28 +24,153 @@
     justify-content: flex-start;
 }
 
-@media only screen and (max-width: 414px) {
-    .header-background {
+*/
+
+.header-background {
+    background: 
+    linear-gradient(to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.2)
+    ), url(http://ucarecdn.com/e4e17d9e-2799-4390-98ff-e77657dbd845/-/scale_crop/500x500/center/) no-repeat;
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 40vh;
+}
+
+.header-content {
+    /*padding-top: 40%;*/
+    color: white;
+    
+}
+
+.heading {
+    padding-top: 20%;
+}
+
+.content {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;   
+}
+
+.pic {
+    display: none;
+}
+
+
+@media only screen 
+    and (min-device-width: 768px)
+    and (orientation : landscape) {
+        .header-background{
         background: 
-        linear-gradient(to bottom,
+        linear-gradient(
+        to bottom,
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.2)
-        ), url(http://ucarecdn.com/e4e17d9e-2799-4390-98ff-e77657dbd845/-/scale_crop/500x500/center/) no-repeat;
-        background-size: cover;
-        height: 100vw;
+        ), url(https://ucarecdn.com/3fa78a80-897a-4026-935d-230828dcddec/) no-repeat;
+        }
+}
+
+/*iphoneX*/
+
+/* Landscape */
+
+@media only screen 
+    and (device-height : 375px) 
+    and (device-width : 812px)
+    and (orientation : landscape)
+    and (-webkit-device-pixel-ratio : 3) { 
+        .header-background { 
+            height: 5%;
+        }
+        .heading {
+            padding: 0;
+            font-size: 1.5rem;
+        }
+
+        .content {
+            flex-direction: row;
+        }
+
+        .pic {
+            display: flex;
+        height: 70vh;
+        width: 40vw;
+        object-fit: cover;
+        justify-content: flex-start;
+        }
+
+        .context{
+            align-self: center; /*baseline centers*/
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 0 0 0 5%;
+        }
     }
 
-    .header-content {
-        padding-top: 40%;
-        color: white;
+
+/*ipad*/
+
+/* Portrait */
+@media only screen 
+  and (device-width: 768px) 
+  and (device-height: 1024px) 
+  and (orientation: portrait) {
+    .heading { 
+        font-size: 3rem;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (device-height: 768px) 
+  and (device-width: 1024px)
+  and (orientation: landscape) {
+    .header-background { 
+        height: 15%;
+    }
+
+    .heading {
+        padding-top: 2%; 
+        font-size: 3rem;
     }
 
     .content {
-        padding: 0%;
-        flex-direction: column;
+        flex-direction: row;
+        /*align-items: center;*/
+    }
+
+    .context {
+        align-self: center; /*baseline centers*/
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding: 0 0 0 5%;
     }
 
     .pic {
-        display: none;
+        display: flex;
+        height: 70vh;
+        width: 40vw;
+        object-fit: cover;
+        justify-content: flex-start;
     }
 }
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+}
+

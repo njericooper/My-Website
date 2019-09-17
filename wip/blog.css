@@ -1,4 +1,48 @@
-body {
-  font-family: sans-serif;
-  font-size: 1.25em;
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
+body{
+  background: #77A1D3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #E684AE, #79CBCA, #77A1D3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  font-family: 'Manjari', sans-serif;
+  height: 100%;
+  width: 100%;
+  color: #252391;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#list{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background: #fdffef;
+  border-radius: 50px;
+  justify-content: center;
+  border: solid 5px #F482A3;
+}
+
+ul {
+  padding-top: 20px;
+  width: 80%;
+  align-self:center;
+  margin:0;
+  padding-right: 3rem;
+}
+
+li {
+  border-bottom: 3px solid #E0BBA2;
+}
+
+h3 {
+  text-align: center;
+}
+
+.noBullet {
+  list-style-type: none;
 }

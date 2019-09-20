@@ -1,37 +1,75 @@
 body {
     background-color:#fffff2;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
-header {
-    display: grid;
-    justify-content: center;
+.heading{
     text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://ucarecdn.com/aee98d5b-2dd1-4385-8db6-a3b37ebd74da/MEC_Mastermind1_3.jpg");
-    background-attachment: fixed;
-    width: 100vw;
+}
+.when {
+    text-align: left;
+    padding-left: 5%;
 }
 
-.hero-text {
-    font-size: 2.5rem;
+h2{
+    padding: 0 15% 0 15%;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+h2::before{
+    content: '"';
+}
+
+h2::after {
+    content: '"';
+}
+
+.image-container {
+    text-align: center;
+}
+ul{
+    text-align: left;
+    line-height: 2rem;
+}
+
+button {
+    display: block;
+    background-color:#8fbc89;
+    border: none;
+    color: white;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .stuff {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 5%;
 }
 
-video {
-    padding: 0 15% 0 15%;
+.vid-container{
+    padding-top: 5%;
+    right: 20%;
+    left: 20%;
+    margin: 0;
+    align-self: center;
+    height: auto;
 }
 
 .text {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5rem;
-    
+    padding: 0 5%;
 }
-

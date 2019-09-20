@@ -1,31 +1,3 @@
-/*.header-background {
-    background: 
-        linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0.2)
-        ), url(https://ucarecdn.com/3fa78a80-897a-4026-935d-230828dcddec/) no-repeat;
-        min-height: 400px;
-}
-
-.content {
-    flex-direction: row;
-    justify-content: baseline;
-}
-
-.context {
-    justify-content: flex-end;
-}
-
-.pic {
-    height: 70vh;
-    width: 40vw;
-    object-fit: cover;
-    justify-content: flex-start;
-}
-
-*/
-
 .header-background {
     background: 
     linear-gradient(to bottom,
@@ -34,6 +6,7 @@
     ), url(http://ucarecdn.com/e4e17d9e-2799-4390-98ff-e77657dbd845/-/scale_crop/500x500/center/) no-repeat; /* -/scale_crop/500x500/center/ */
     min-height: 40vh;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .header-content {
@@ -112,6 +85,7 @@
         rgba(0, 0, 0, 0.2)
         ), url(https://ucarecdn.com/3fa78a80-897a-4026-935d-230828dcddec/) no-repeat;
         background-attachment: fixed;
+        background-size: cover;
         }
 }
 
@@ -129,10 +103,8 @@
         .heading {
             padding: 0;
             font-size: 1.5rem;
-        }
-
-        
-    }
+        } 
+}
 
 
 /*ipad*/

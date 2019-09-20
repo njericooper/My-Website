@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/njericooper/My-Website#readme",
   "dependencies": {
+    "cloudinary": "^1.15.0",
     "firebase-admin": "^8.4.0"
   }
 }

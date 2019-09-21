@@ -7,21 +7,22 @@ body {
     height: 100%;
 }
 
-.heading{
+.heading {
     text-align: center;
 }
+
 .list {
     text-align: left;
     padding-left: 10%;
 }
 
-h2{
+h2 {
     padding: 0 15% 0 15%;
     line-height: 2rem;
     font-weight: 600;
 }
 
-h2::before{
+h2::before {
     content: '"';
 }
 
@@ -32,7 +33,12 @@ h2::after {
 .image-container {
     text-align: center;
 }
-ul{
+
+.pic {
+    width: 100vw;
+}
+
+ul {
     text-align: left;
     line-height: 2rem;
 }
@@ -42,6 +48,7 @@ ul{
     justify-content: center;
     align-items: center;
 }
+
 button {
     display: block;
     background-color:#8fbc89;
@@ -73,3 +80,77 @@ button {
     padding: 0 5%;
 }
 
+footer {
+    position: relative;
+    height: 3rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: .8rem;
+}
+
+/* 
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+*/
+
+@media screen and (min-width: 800px) { 
+
+    h5 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+        line-height: 5.2rem;
+        padding: 0 20% 2% 20%;
+        margin: 0;
+    }
+
+    .stuff {
+        padding: 0 15% 0 15%;
+    }
+
+    .image-container {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .pic {
+        justify-content: flex-start;
+        width: 50%;
+    }
+
+    .list {
+        padding: 0;
+    }
+
+    .list-container{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        padding-left: 5%;
+    }
+
+    .image-container {
+        align-items: center;
+    }
+
+    button {
+        padding: 2.5rem 4.5rem;
+        margin: 1rem;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .image-container {
+        padding-bottom: 5%;
+    }
+
+    .about-me {
+        padding: 0;
+    }
+
+    
+}

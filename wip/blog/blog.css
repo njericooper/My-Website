@@ -1,0 +1,15 @@
+.header-background {
+    background: 
+    linear-gradient(to bottom,
+    rgba(0, 0, 0, .5),
+    rgba(255, 255, 255, 0.2)
+    ), url(https://ucarecdn.com/d73eaed3-411c-447b-94de-19d7492eb60a/-/preview/) no-repeat; /* -/scale_crop/500x500/center/ */
+    min-height: 40vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.coverImage {
+    width: 3rem;
+}

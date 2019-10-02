@@ -60,7 +60,7 @@
 }
 
 .github:hover {
-  background-color: #3E6897;
+  background-color: #4f73bf;
 }
 
 .codepen {
@@ -73,7 +73,7 @@
 }
 
 .codepen-in-focus:hover {
-  background-color: #0E6F73;
+  background-color: #1e3072;
 }
 
 .devto {
@@ -82,7 +82,7 @@
 }
 
 .devto:hover {
-  background-color: #32C7B0;
+  background-color: #5092ce;
 }
 
 .twitter {
@@ -91,7 +91,7 @@
 }
 
 .twitter:hover{
-  background-color: #29EBF2;
+  background-color:#b4eff4;
 }
 
 @media only screen and (max-width: 414px) {

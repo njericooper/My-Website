@@ -1,8 +1,8 @@
 .header-background {
     background: 
     linear-gradient(to bottom,
-    rgba(0, 0, 0, .5),
-    rgba(255, 255, 255, 0.2)
+    rgba(0, 0, 0, 0.3),
+    rgba(255, 255, 255, 0.3)
     ), url(https://ucarecdn.com/d73eaed3-411c-447b-94de-19d7492eb60a/-/preview/) no-repeat; /* -/scale_crop/500x500/center/ */
     min-height: 40vh;
     background-attachment: fixed;
@@ -11,5 +11,52 @@
 }
 
 .coverImage {
-    width: 3rem;
+    width: 100%;
 }
+
+.heading {
+    color: #fafeab;
+}
+
+.container {
+    padding: 0 10% 0 10%;
+}
+
+ul {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    list-style:none;
+}
+
+li {
+    justify-content: center;
+    border-bottom: .1em solid #038c44;
+    /*border-radius: .5em;*/
+    padding: 1em;
+    margin: .6rem;
+
+}
+
+li a {
+    text-decoration: none;
+}
+
+.articleTitle a {
+    background-color: #97FF6A;
+    color: #004729;
+}
+
+.des {
+    color: black;
+}
+
+/* ul desktop
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;	
+    grid-column-gap: 0px;
+    grid-row-gap: 16px; */

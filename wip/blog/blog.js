@@ -10,8 +10,8 @@ function requestUserRepos(username){
             li.classList.add('list-group-item');
             li.innerHTML = (`
             <a href="${data[i].url}" ><img src="${data[i].cover_image}" class="coverImage"></a>
-            <p><a href="${data[i].url}">${data[i].title}</a></p>
-            <p>${data[i].description}</p>
+            <h4 class="articleTitle"><a href="${data[i].url}">${data[i].title}</a><h4>
+            <p class="des">${data[i].description}</p>
             `);
             ul.appendChild(li);
         }

@@ -7,9 +7,9 @@ function requestUserRepos(username){
         for(let i in data) {
             let ul = document.getElementById('blogPosts');
             let li = document.createElement('li');
-            li.classList.add('list-group-item');
+            li.classList.add('posts');
             li.innerHTML = (`
-            <a href="${data[i].url}" ><img src="${data[i].cover_image}" class="coverImage"></a>
+            <a href="${data[i].url}"><img src="${data[i].cover_image}" class="coverImage"></a>
             <h4 class="articleTitle"><a href="${data[i].url}">${data[i].title}</a><h4>
             <p class="des">${data[i].description}</p>
             `);
@@ -19,3 +19,8 @@ function requestUserRepos(username){
     xhr.send();   
 }
 requestUserRepos('njericooper');
+
+
+function showPost(id) {
+    const postUrl = `https://dev.to/api/articles/${id}`;
+}

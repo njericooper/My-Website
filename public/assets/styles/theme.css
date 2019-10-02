@@ -21,6 +21,7 @@ a {
 
 .menu-item {
     list-style: none;
+    padding: 1em;
 }
 
 .menu-item a {

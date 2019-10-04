@@ -40,7 +40,7 @@
 
 .posts {
     justify-content: center;
-    border-bottom: .1em solid #038c44;
+    /*border-bottom: .1em solid #038c44;*/
     /*border-radius: .5em;*/
     padding: 1em;
     margin: .6rem;
@@ -51,8 +51,24 @@
 }
 
 .articleTitle a {
-    background-color: #97FF6A;
     color: #004729;
+    padding: 0;
+    text-decoration: none;
+    background-image: linear-gradient( transparent 0%, transparent calc(50% - 8px), #97FF6ACC calc(50% - 8px),#97FF6ACC 100% );
+    transition: background-position 120ms ease-in-out, padding 120ms ease-in-out;
+    background-size: 100% 200%;
+    background-position: 0 0;
+}
+
+.articleTitle a:hover {
+    padding: 2px 0 4px 0;
+    background-image: linear-gradient(
+    transparent 0%,
+    transparent calc(50% - 8px),
+    #3FFC30 calc(50% - 8px),
+    #3FFC30 100%
+    );
+    background-position: 0 100%;
 }
 
 .des {

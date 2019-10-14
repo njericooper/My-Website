@@ -2,12 +2,25 @@
   "database": {
     "rules": "database.rules.json"
   },
-  "hosting": {
+  "hosting": [ 
+    {
+    "target": "main",
     "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ]
+  }, 
+  { 
+  "target": "book",
+  "public": "public/book", 
+  "rewrites": [
+    { 
+    "source": "**",
+    "destination": "/index.html"
+    }
+  ]
   }
+]
 }

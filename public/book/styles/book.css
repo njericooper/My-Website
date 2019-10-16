@@ -107,10 +107,6 @@ footer {
     padding-top: 2%;
 }
 
-#footerText::before {
-    content: " ,  ";
-}
-
 /* 
 ##Device = Desktops
 ##Screen = 1281px to higher resolution desktops

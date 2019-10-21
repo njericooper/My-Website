@@ -69,15 +69,19 @@ a {
 .footer {
     display: flex;
     flex-flow: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    text-align: center;
+    flex-wrap: wrap;
     position: absolute;
     background: #222491;
     color: #FAC7F8;
     height: 2.5rem;
     font-size: 1rem;
     width: 100%;
+    justify-content: center;
     align-content: center;
-    padding-top: 1.5rem;
+    padding: .5rem 0 .8rem 0;
+}
+
+p.footerText {
+    text-align: center;
+    margin: 0;
 }

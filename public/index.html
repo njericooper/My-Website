@@ -30,7 +30,6 @@ d888888b db   db  .d8b.  d8b   db db   dD .d8888.      d88888b  .d88b.  d8888b. 
                                                                                                                                                                   
 -->                                                                                                                                
     
-
 <head>
   <meta charset="UTF-8">
   <title>Frontend Dev - Njeri Cooper</title>
@@ -46,6 +45,7 @@ d888888b db   db  .d8b.  d8b   db db   dD .d8888.      d88888b  .d88b.  d8888b. 
   <link rel="stylesheet" href="/assets/styles/theme.css">
   <script type="text/javascript" src="/assets/scripts/main.js"></script>
   <script type="text/javascript" src="/assets/scripts/date.js"></script>
+  
 </head>
 <body>
   <div class="theme-header header-background">
@@ -68,8 +68,8 @@ d888888b db   db  .d8b.  d8b   db db   dD .d8888.      d88888b  .d88b.  d8888b. 
       <a href="http://bit.ly/tweet-njeri" class="twitter tab"><img src="https://ucarecdn.com/8724b28d-cf3c-4260-ae11-eb8d83f1b29d/twitterlogo.png" class="link-logo" alt="Twitter"></a>
     </div> 
   </section>
-  <footer class="footer">
-    <span id="footerText"> </span> &copy;  <br> 
+  <footer class="footer" onload="setDate()"> 
+    <p id="footerText" class="footerText"></p>
   </footer> 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="/__/firebase/6.2.4/firebase-app.js"></script>
@@ -77,14 +77,6 @@ d888888b db   db  .d8b.  d8b   db db   dD .d8888.      d88888b  .d88b.  d8888b. 
   <!-- Initialize Firebase -->
   <script src="/__/firebase/init.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script>const firebaseConfig = {
-    apiKey: "AIzaSyDuWg8Y8lKT_ZnMdGbo2REGT_BrqR3tXW8",
-    authDomain: "og-codes.firebaseapp.com",
-    databaseURL: "https://og-codes.firebaseio.com",
-    projectId: "og-codes",
-    storageBucket: "og-codes.appspot.com",
-    messagingSenderId: "166622941576",
-    appId: "1:166622941576:web:43fae4fa738e1267"
-  };</script>
+  
 </body>
 </html>

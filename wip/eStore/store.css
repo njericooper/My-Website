@@ -1,0 +1,151 @@
+html, body{
+    min-width: 320px;
+}
+
+body {
+    background-color: #EFEFFE;
+    color: #666666;
+    padding-top: 80px;
+}
+
+main {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0 0 4px -1px #666;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+}
+
+.navbar {
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    width: 50px;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo-text:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cart-dropdown-items-count {
+    width: 30px;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 100px;
+    background-color: #dc3545;
+    color: #FFFFFF;
+}
+
+.white-block {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 1px 6px -2px #333333;
+    margin: 10px;
+}
+
+/* Medium > Tablet */
+@media (min-width: 641px) {
+    .white-block {
+        padding: 20px;
+        margin: 20px;
+    }
+}
+
+.product {
+    box-shadow: 0 0 14px -2px #EFEFFE;
+    padding: 12px;
+    border: 1px solid #EFEFFE;
+    color: black;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Medium > Tablet */
+@media (min-width: 500px) {
+    .product {
+        max-width: 49%;
+    }
+}
+
+/* Medium > Tablet */
+@media (min-width: 768px) {
+    .product {
+        max-width: 33%;
+    }
+}
+
+/* Medium > Tablet */
+@media (min-width: 1024px) {
+    .product {
+        max-width: 24%;
+    }
+}
+
+.product-name {
+    font-size: 18px;
+}
+
+.product-description {
+    font-size: 14px;
+}
+
+.product-image {
+    max-width: 80%;
+    max-height: 100px;
+    display: inline-block;
+}
+
+.product-price {
+    color: orangered;
+}
+
+.product-availability {
+    color: darkseagreen;
+}
+
+/*.cart-crumbtrail {}*/
+
+.cart-crumbtrail-step {
+    padding-bottom: 3px;
+}
+
+a[href].cart-crumbtrail-step {
+    color: #6455BB;
+    border-bottom: 2px solid;
+}
+
+a[href].cart-crumbtrail-step:hover {
+    text-decoration: none;
+}
+
+.cart-crumbtrail-step .fa {
+    background: #6455BB;
+    padding: 10px;
+    border-radius: 100px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.cart-crumbtrail-step-label {
+    font-size: 20px;
+}

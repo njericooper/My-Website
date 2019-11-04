@@ -4,6 +4,7 @@ body{
     padding: 0;
     height: 100%;
     width: 100%;
+    /*background-color: #FEF0F0;*/
 }
 
 .wrapper {
@@ -18,7 +19,9 @@ body{
     display: flex;
     flex-direction: column;
     align-self: center;
-    background-color: #3e6a9b;
+    background-color:#FEF0F0;
+    border-bottom: 5px solid #3E6897;
+    border-top: 5px solid #3E6897;
     width: 100vw;
     padding: 2rem;
     margin: 3rem 0 3rem 0;
@@ -27,8 +30,8 @@ body{
 header {
     font-size: 2rem;
     padding-bottom: 2rem;
-    color: white;
-  text-align: center;
+    color: #3E6897;
+    text-align: center;
 }
 
 .form {
@@ -38,18 +41,21 @@ header {
 
 .form-input {
     padding: .6rem 1rem;
-    border: .11rem solid #78f9e3;
     border-radius: .3rem;
     margin-bottom: 2rem;
     font-size: 1rem;
     text-align: center;
+    background-color: #fffff2;
 }
 
 .btn {
     font-size: 1.25rem;
     padding: .5rem 1rem;
     border-radius: .3rem;
-    color: #fff;
-    background-color: #3d6b9a;
-    border-color: #fff;
+    color: #FEF0F0;
+    background-color: #3E6897;
+}
+
+.border {
+    border: .11rem solid #3E6897;
 }

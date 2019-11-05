@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Subscribe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/public/assets/styles/theme.css">
+    <link rel="stylesheet" href="/public/assets/styles/subscribe-module.css">
+    <script src="/public/assets/scripts/date.js"></script>
+    <script src="/wip/ads/ads.js"></script>
+    <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container"> 
+            <header>Stay In Touch?</header>
+            <!--If you're borrowing this code, change the action tag to your own url or your users will be subscribing to me. Thanks, Coop-->
+            <form data-email-list="" action="https://formsubmit.co/fcb52a083030a2fb2603211c63831567" method="POST">
+                <div class="form">
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="hidden" name="_replyto">
+                    <input type="email" class="form-input border" name="email" id="emailInput" value="" placeholder="email@something.com" required>
+                    <input type="hidden" name="_autoresponse" value="Thank you for subscribing to my blog! I'll message you when I have an update.">
+                    <button type="submit" class="btn border">submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer" onload="setDate()"> 
+        <p id="footerText" class="footerText"></p>
+    </footer>      
+</body>
+</html>

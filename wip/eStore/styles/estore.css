@@ -1,0 +1,48 @@
+body {
+    background-color: cornsilk;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 10%;
+}
+
+.title {
+    line-height: .5em;
+    font-weight: bolder;
+}
+
+.subTitle {
+    font-size: 2rem;
+    font-weight: lighter;
+    padding-bottom: 10%;
+}
+
+.collections {
+    display: flex;
+    flex-direction: row;
+}
+
+.type {
+    background-color: white;
+    border-radius: .5em;
+    width: 6.5em;
+    text-align: center;
+    margin-right: 3%;
+}
+
+.icon {
+    border-radius: 1rem;
+    width: 10em;
+    height: 12em;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+}
+
+.pd-r {
+    padding-right: 3%;
+}

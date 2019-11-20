@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/react/0.13.0/react.min.js"></script>
-    <link rel="stylesheet" href="/public/assets/styles/theme.css">
-    <link rel="stylesheet" href="blog.css">
-    <script src="blog.js"></script>
+    <link rel="stylesheet" href="/assets/styles/theme.css">
+    <link rel="stylesheet" href="/assets/styles/blog.css">
+    <script src="./assets/scripts/blog.js"></script>
+    <script src="./assets/scripts/date.js"></script>
     <title>Njeri's Blog</title>
 </head>
 <body>
     <div class="theme-header header-background" role="heading">
         <div class="header-content">
-            <nav class="nav">
+            <nav>
                 <ul class="nav-items">
-                    <li class="menu-item"><a href="/public/index.html">home</a></li>
-                    <li class="menu-item"><a href="/public/about.html">about</a></li>
+                    <li class="menu-item"><a href="index.html">home</a></li>
+                    <li class="menu-item"><a href="about.html">about</a></li>
                 </ul>
             </nav>
             <h1 class="heading">Blog</h1>
@@ -25,12 +26,11 @@
     </div>
     <div class="container">
         <div id="list">
-            <ul class="noBullet" id="blogPosts"></ul>
+            <ul class="noBullet blogPosts" id="blogPosts"></ul>
         </div>
     </div>
-    <footer class="footer">
-            &copy; Coop <br> <span id="footerText"> </span> 
-            <script type="text/javascript" src="/assets/scripts/date.js"></script>
-        </footer> 
+    <footer class="footer" onload="setDate()"> 
+        <p id="footerText" class="footerText"></p>
+    </footer>
 </body>
 </html>

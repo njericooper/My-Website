@@ -20,7 +20,6 @@ function requestUserRepos(username){
 }
 requestUserRepos('njericooper');
 
-
 function showPost(id) {
     const postUrl = `https://dev.to/api/articles/${id}`;
 }

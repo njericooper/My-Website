@@ -14,18 +14,21 @@ a {
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>") 16 0,auto;
 }
 
-.nav {
-    color: white;
-    padding-bottom: 5%;
-}
-
-.menu-item {
+.nav-items {
     list-style: none;
-    padding: 1em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
-.menu-item a {
+.nav-items a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
     color: white;
+    font-size: 2em;
 }
 
 .theme-header {
@@ -68,8 +71,7 @@ a {
 
 .footerText {
     display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     position: absolute;
     background: #222491;
     color: #FAC7F8;

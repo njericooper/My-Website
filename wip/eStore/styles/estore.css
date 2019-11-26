@@ -1,6 +1,6 @@
 body {
-    background-color: cornsilk;
-    color: black;
+    background-color: #3A2852;
+    color: #F892F8;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -11,6 +11,10 @@ body {
 .title {
     line-height: .5em;
     font-weight: bolder;
+}
+
+.text-w {
+    color: white;
 }
 
 .subTitle {

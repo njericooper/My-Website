@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    color: #fff;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+.btn {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 2em 4em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3em;
+    margin: .5em .25em;
+    text-transform: capitalize;
+}
+
+.shop-btn {
+    background-color: transparent; 
+    color: white; 
+    border: .5em solid white;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (min-width: 414px) {   /*Laptops, Desktops*/
+
+    .btn{
+        padding: 1em 2em;
+        margin: .25em .125em;
+        transition-duration: 0.4s;
+        -webkit-transition-duration: 0.4s;
+    }
+
+    .shop-btn {
+        border: .145em solid white;
+    } 
+
+    .shop-btn:hover {
+        background-color: white;
+        color: #4CAF50;
+    }
+}
+
+

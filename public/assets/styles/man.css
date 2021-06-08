@@ -5,8 +5,33 @@
     bottom: 0;
     width: 100%;
     justify-items: center;
-    text-align: center;
+    text-align: left;
     padding-top: 2%;
+}
+
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://americanenglish.state.gov/files/ae/photo_2_1.jpg");
+    min-height: 15em;
+    height: 50%;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+      
+.hero-text {
+    padding-left: 8%;
+    text-align: left;
+    color: white;
+}
+
+.hero-header{
+    align-self: center;
+    font-size:2.5rem;
 }
 
 p {

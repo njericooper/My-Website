@@ -8,5 +8,6 @@
         "latex",
         "plaintext",
         "html"
-    ]
+    ],
+    "FSharp.suggestGitignore": false
 }

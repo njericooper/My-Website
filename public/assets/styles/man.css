@@ -41,6 +41,7 @@ p {
 .con-wrapper{
     margin-left: 5%;
     margin-right: 5%;
+    padding-bottom: 5%;
 }
 
 .personaCard {
@@ -108,6 +109,7 @@ p {
     font: bold;
 
 }
+
 
 @media screen and (min-width: 1024px){ 
 

@@ -1,10 +1,13 @@
+.menuLinks a {
+color: black;
+}
+
 .main-section {
   height: 100%;
   display: flex;
   flex-basis: column nowrap;
   align-items: center;
   justify-content: center;
-  background-color: white;
 }
 
 .card-container {
@@ -21,13 +24,18 @@
 }
 
 .man {
-    background-image: url(https://americanenglish.state.gov/files/ae/photo_2_1.jpg);
+    background-image: url(https://ucarecdn.com/30f01746-1a44-4d71-bcbe-d585792b266d/photo_2_1.jpg);
     width: 100%;
 }
 
-.Astro {
-    background-image: url(https://images.pexels.com/photos/64272/blossom-bloom-flower-red-64272.jpeg);
+.htbch {
+    background-image: url(https://ucarecdn.com/04becc3a-f93d-402c-95ce-04c46cc81e86/Cards_andComputer.jpg);
     width: 100%;
+}
+
+.astro{
+  background-image: url(https://images.pexels.com/photos/6932066/pexels-photo-6932066.jpeg);
+  width: 100%;
 }
 
 .article-title {

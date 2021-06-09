@@ -12,13 +12,12 @@
 .hero-image {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://americanenglish.state.gov/files/ae/photo_2_1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://ucarecdn.com/30f01746-1a44-4d71-bcbe-d585792b266d/photo_2_1.jpg");
     min-height: 15em;
     height: 50%;
     align-self: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     align-items: center;
     justify-content: center;
 }
@@ -48,3 +47,90 @@ p {
     max-width: 20rem;
     max-height: 15rem;
 }
+
+.image {
+    max-height: 25rem;
+    max-width: 20rem;
+}
+
+.image-subText{
+    font-size: .7em;
+}
+
+.icons, .palette {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.icons > div, .palette > div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 1em;
+    max-width: 20rem;
+}
+
+.purpIcon{
+    color: #663399;
+}
+
+.whiteIcon{
+    background-color: #663399;
+    color: white;
+}
+
+.icons > div > .image {
+    max-width: 4rem;
+    max-height: 4rem;
+}
+
+.dark-purp{
+    background-color: #663399;
+    color: white;
+}
+
+.white{
+    background-color: white;
+    color: #663399;
+}
+
+.black{
+    background-color: black;
+    color: white;
+}
+
+.primary { 
+	font-family: Arial Rounded MT Bold;
+    text-transform: uppercase; 
+    font: bold;
+
+}
+
+@media screen and (min-width: 1024px){ 
+
+    .personaCard {
+        max-height: 30rem;
+    }
+
+    .landscape{
+        min-height: none;
+        min-width: 35rem;
+    }
+
+    .hero-text {
+        padding: 0;
+    }
+    .hero-image{ 
+        background-attachment: fixed;
+    }
+    .con-wrapper, .hero-text {
+        max-width: 40em;
+        margin: 0 auto;
+    }  
+}
+
+
+

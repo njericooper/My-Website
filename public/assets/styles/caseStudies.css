@@ -1,4 +1,21 @@
+.con-wrapper{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 5%;
+}
 
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    min-height: 15em;
+    height: 50%;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+
+}
 
 
 @media screen and (min-width: 1024px){
@@ -6,4 +23,9 @@
         max-width: 40em;
         margin: 0 auto;
     }
+
+    .hero-image { 
+        background-attachment: fixed;
+    }
+      
 }

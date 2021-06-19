@@ -10,16 +10,7 @@
 }
 
 .hero-image {
-    display: flex;
-    flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://ucarecdn.com/30f01746-1a44-4d71-bcbe-d585792b266d/photo_2_1.jpg");
-    min-height: 15em;
-    height: 50%;
-    align-self: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
 }
       
 .hero-text {
@@ -36,12 +27,6 @@
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
-}
-
-.con-wrapper{
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 5%;
 }
 
 .personaCard {
@@ -125,10 +110,7 @@ p {
     .hero-text {
         padding: 0;
     }
-    .hero-image{ 
-        background-attachment: fixed;
-    }
-      
+
 }
 
 

@@ -13,36 +13,6 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://ucarecdn.com/30f01746-1a44-4d71-bcbe-d585792b266d/photo_2_1.jpg");
 }
       
-.hero-text {
-    padding-left: 8%;
-    text-align: left;
-    color: white;
-}
-
-.hero-header{
-    align-self: center;
-    font-size:2.5rem;
-}
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.25rem;
-}
-
-.personaCard {
-    max-width: 20rem;
-    max-height: 15rem;
-}
-
-.image {
-    max-height: 25rem;
-    max-width: 20rem;
-}
-
-.image-subText{
-    font-size: .7em;
-}
-
 .icons, .palette {
     display: flex;
     flex-flow: row nowrap;
@@ -102,14 +72,7 @@ p {
         max-height: 30rem;
     }
 
-    .landscape{
-        min-height: none;
-        min-width: 35rem;
-    }
-
-    .hero-text {
-        padding: 0;
-    }
+   
 
 }
 

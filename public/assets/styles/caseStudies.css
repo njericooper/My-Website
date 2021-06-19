@@ -1,0 +1,9 @@
+
+
+
+@media screen and (min-width: 1024px){
+    .con-wrapper, .hero-text {
+        max-width: 40em;
+        margin: 0 auto;
+    }
+}

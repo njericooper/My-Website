@@ -10,6 +10,10 @@ color: black;
   justify-content: center;
 }
 
+.port {
+  color: black;
+}
+
 .card-container {
   background-color: white;
   color: black;

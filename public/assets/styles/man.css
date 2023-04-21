@@ -1,3 +1,12 @@
+@import url(//db.onlinewebfonts.com/c/6c49e43018ee17b6cdbb80fe846b214d?family=Arial+Rounded+MT+Bold);
+@font-face {
+    font-family: "Arial Rounded MT Bold"; 
+        src: url("//db.onlinewebfonts.com/t/6c49e43018ee17b6cdbb80fe846b214d.eot"); src: url("//db.onlinewebfonts.com/t/6c49e43018ee17b6cdbb80fe846b214d.eot?#iefix") 
+        format("embedded-opentype"), 
+        url("//db.onlinewebfonts.com/t/6c49e43018ee17b6cdbb80fe846b214d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6c49e43018ee17b6cdbb80fe846b214d.woff") 
+        format("woff"), 
+        url("//db.onlinewebfonts.com/t/6c49e43018ee17b6cdbb80fe846b214d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6c49e43018ee17b6cdbb80fe846b214d.svg#Arial Rounded MT Bold") format("svg"); 
+}
 .man-heading {
     display: grid;
     margin: 0 auto;
@@ -61,15 +70,17 @@
 .primary { 
 	font-family: Arial Rounded MT Bold;
     text-transform: uppercase; 
-    font: bold;
+    font-weight: bold;
 
 }
+
 
 
 @media screen and (min-width: 1024px){ 
 
     .personaCard {
-        max-height: 30rem;
+        height: auto;
+        width:100%;
     }   
 
 }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Njeri Cooper is a software engineer with experience in frontend web development, JavaScript frameworks including Vue, Angular, React | Dev-Ops, cloud infrastructure, Docker, WordPress development, media CDN APIs, Apache and Nginx server security and more.">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <title>Njeri Cooper's Resume</title>
+</head>
+<body>
+    <div id="app">
+
+        <h1>{{ name }}</h1> 
+        <img :src= "icon1" v-bind:alt="icon1Alt">
+        <h2>{{ contact }}</h2>
+        <h2>{{ currentJob }}</h2>
+        <p>{{ currentDesc}}</p>
+        <h2>{{ prevJob1 }}</h2>
+        <p>{{ prevJob1Desc }}</p>
+        <h3>{{ skills }}</h3>
+    </div>
+    <script src="./assets/scripts/resume.js"></script>
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+
+</body>
+</html>

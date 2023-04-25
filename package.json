@@ -19,6 +19,6 @@
   "dependencies": {
     "cloudinary": "^1.15.0",
     "firebase": "^8.0.2",
-    "firebase-admin": "^9.4.1"
+    "firebase-admin": "^11.7.0"
   }
 }

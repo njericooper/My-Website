@@ -1,0 +1,32 @@
+/*reset.css*/
+/* RESETS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font: 62.5% / 1.15 sans-serif;
+}
+h1,
+h2 {
+  margin-bottom: 0;
+}
+
+body {
+  width: 100%;
+  max-width: 68rem;
+  margin: 0 auto;
+  font: 1.6rem/1.25 "Open Sans", sans-serif;
+  color: #4d4d4d;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+@media screen and (min-width: 620px) {
+  body {
+    font-size: 1.9rem;
+    line-height: 1.31579;
+  }
+}
+/*END RESETS*/

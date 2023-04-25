@@ -5,21 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Njeri Cooper is a software engineer with experience in frontend web development, JavaScript frameworks including Vue, Angular, React | Dev-Ops, cloud infrastructure, Docker, WordPress development, media CDN APIs, Apache and Nginx server security and more.">
+    <link rel="stylesheet" href="./assets/styles/resume.css">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <title>Njeri Cooper's Resume</title>
 </head>
 <body>
-    <div id="app">
-
-        <h1>{{ name }}</h1> 
-        <img :src= "icon1" v-bind:alt="icon1Alt">
-        <h2>{{ contact }}</h2>
-        <h2>{{ currentJob }}</h2>
-        <p>{{ currentDesc}}</p>
-        <h2>{{ prevJob1 }}</h2>
-        <p>{{ prevJob1Desc }}</p>
-        <h3>{{ skills }}</h3>
+    <div id="app" class="app-body">
+        <div class="top" id="app">         
+            <img :src= "icon1" :alt="icon1Alt" class="icon1">
+            <h1>{{ name }}</h1>
+        </div>
+ 
+        <h2 class="contact">{{ contact }}</h2>
+        <h1>Profile</h1>
+        <p class="txt">{{ profile }}</p>
+        <h1>Experience</h1>
+        <h2 class="sub-hdr">{{ currentJob }}</h2>
+        <p class="txt">{{ currentDesc}}</p>
+        <h2 class="sub-hdr">{{ prevJob1 }}</h2>
+        <p class="txt">{{ prevJob1Desc }}</p>
+        <h1>Skills</h1>
+        <p class="txt">{{ skills }}</p>
     </div>
     <script src="./assets/scripts/resume.js"></script>
     <script>

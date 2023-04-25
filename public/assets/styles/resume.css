@@ -1,11 +1,19 @@
 @import url("./theme.css");
 
-
 .top {
     display: flex;
     flex-flow: row nowrap;
     margin: 2em 0;
     align-items: baseline;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.qr {
+    display: flex;
+    height: 4em;
+    width: auto;
+    align-self: center;
 }
 
 .icon1{
@@ -23,7 +31,7 @@
 }
 
 .txt {
-    font-size: 1.3rem;
+    font-size: .8em;
 }
 
 .contact{ 

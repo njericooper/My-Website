@@ -18,9 +18,9 @@ const app = Vue.createApp({
             icon1Alt: "",
             qrCode: "https://ucarecdn.com/3ce559f5-2718-4b38-af18-e2d653f27542/-/preview/586x270/-/quality/smart/-/format/auto/",
             qrCodeAlt: "",
-            technologies: "Technologies: React, Vue, Node, MySQL, WordPress, Gatsby, jQuery, Microsoft Power BI, Adobe Creative Suite",
+            technologies: "Technologies: React, Vue, Node, MySQL, WordPress, Gatsby, jQuery, Microsoft Power BI, Adobe Creative Suite, git, GitHub Actions",
             languages: "Languages: JavaScript, PHP, HTML, CSS",
-            other: "Other: CRMs, DonorDrive, SalesForce MC, APIs, CDNs"
+            other: "Other: CRMs, DonorDrive, SalesForce MC, APIs, CDNs, CI/CD"
         }
     }
 })

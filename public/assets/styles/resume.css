@@ -35,13 +35,14 @@
 }
 
 .contact{ 
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .sub-hdr {
-    font-size: 2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
 h1 {
-    font-size:2.5rem ;
+    font-size:2rem ;
 }

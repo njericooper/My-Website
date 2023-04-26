@@ -6,7 +6,7 @@ const app = Vue.createApp({
             contact: "hello@njeri.codes | 931-797-7570",
             profile: "Self-driven software engineer with seven years experience building products on mobile and web. Comfortable in fast-paced corporate, startup and nonprofit settings",
             currentJob: "Web Developer, Youth Villages | 2021-Present",
-            currentDesc: "Development and User Interface design for organization program event and fundraising campaign pages. Maintaining website infrastructure using tools such as Digital Ocean, Docker, WP CLI, WordPress theme development, PHP and JavaScript. Managing tactical execution of email campaigns in Salesforce Marketing Cloud including developing HTML email templates.",
+            currentDesc: "Lead web developer on a local government-backed project that reduces gun violence and helps heal disenfranchised communities with therapy and job resources. Helped resolve multi-brand web accessibility issues by using APIs. This change directly decreased media storage and hosting costs by 50%",
             freelance:"Freelance Software Developer (Serverless) | 2018-Present",
             freelanceDesc:"Building quality web sites and web apps for clients in a timely manner utilizing WordPress, Gatsby, Eleventy, MERNStack",
             prevJob1: "UI / UX / Mobile Developer, St. Jude | 2016-2018",

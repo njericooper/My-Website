@@ -28,6 +28,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 2%;
 }
 
 .txt {
@@ -45,4 +46,10 @@
 
 h1 {
     font-size:2rem ;
+}
+
+.--tech, .--lang, .--other {
+    padding: .3em 0;
+    margin: 0;
+    line-height: 1.5em;
 }

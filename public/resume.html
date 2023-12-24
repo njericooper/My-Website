@@ -40,8 +40,8 @@
         </div>
  
         <h2 class="contact">{{ contact }}</h2>
-        <h1>Profile</h1>
-        <p class="txt">{{ profile }}</p>
+        <h1>Summary</h1>
+        <p class="txt">{{ summary }}</p>
         <h1>Experience</h1>
         <h2 class="sub-hdr">{{ currentJob }}</h2>
         <p class="txt">{{ currentDesc}}</p>
@@ -54,7 +54,7 @@
         <p class="txt --tech">{{ technologies }}</p>
         <p class="txt --lang">{{ languages }}</p>
         <p class="txt --other">{{ other }}</p>
-       <!--  <img :src="qrCode" :alt="qrCodeAlt" class="qr"> -->
+       <img :src="qrCode" :alt="qrCodeAlt" class="qr">
     </div>
     <script src="./assets/scripts/resume.js"></script>
     <script>

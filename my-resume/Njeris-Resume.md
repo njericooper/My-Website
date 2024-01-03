@@ -6,10 +6,13 @@
 
 ## Profile
 
-Self-driven User Experience / User Interaction Developer with six years building products
-on mobile and web. Comfortable in fast-paced corporate, startup and nonprofit settings.
+Self-driven software engineer. Focused on Javascript, Python, cloud technologies, and DevOps. I'm most enthusiastic about solving problems from a full stack perspective.
 
 ## Experience
+
+### WEB DEVELOPER, YOUTH VILLAGES | 2021-PRESENT
+
+Lead web developer on a local government-backed project that reduces gun violence and helps heal disenfranchised communities with therapy and job resources. Helped resolve multi-brand web accessibility issues by using APIs. This change directly decreased media storage and hosting costs by 50%
 
 ### FREELANCE WEB DEVELOPER ( MERN / SERVERLESS STACKS) — 2018–PRESENT
 
@@ -22,22 +25,6 @@ Led the planning, design, development, testing, and production deployment proces
 new iteration for St. Jude’s mobile app utilizing Apple’s User Interface guidelines to set the
 tone for the design system and swift. The impact of this while launching it in partnership
 with Twitch totaled to $11 million raised for St. Jude.
-
-### TECH INSTRUCTOR, CLOUD901, MEMPHIS, TN — 2015-2016
-
-Created lesson planning, community outreach and tech education to spur spark
-innovation in the inner-city youth of Memphis Tennessee by introducing and educating
-them in the fundamentals of Engineering, Robotics and Computer Science. Twice lead
-teams of youth into winning Memphis Hack-a-thons, beating both teams from local
-colleges as well as teams that work on production level code. Resulted in one of my team
-members getting a job offer on the spot as an engineer.
-
-### IT SPECIALIST, CITY OF MEMPHIS — 2014-2015
-
-Provided technical support for City Of Memphis systems. Focused on developing tools
-and resources as well as training people to ensure that departments could have solutions
-readily available for issues that pertained to them individually, similar to how the military
-creates Standard Operating Procedures.
 
 ## Skills
 

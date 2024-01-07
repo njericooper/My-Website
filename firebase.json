@@ -22,6 +22,24 @@
     "destination": "/index.html"
     }
   ]
+  },
+  {
+    "headers": [
+     {
+      "source": "**/*.@(html)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+          },
+          {
+            "key": "Cache-Control",
+            "value": "max-age=3600"
+            }
+
+      ]
+     }
+    ]
   }
 ]
 }

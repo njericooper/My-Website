@@ -3,7 +3,7 @@ const app = Vue.createApp({
         return {
 
             name: "Njeri Cooper" ,
-            contact: "hello@njeri.codes | 931-797-7570",
+            contact: "hello@njeri.codes | 517-858-2899",
             summary: "Self-driven software engineer. Focused on Javascript, Python, cloud technologies, and DevOps. I'm most enthusiastic about solving problems from a full stack perspective.",
             currentJob: "Web Developer, Youth Villages | 2021-Present",
             currentDesc: "Lead web developer on a local government-backed project that reduces gun violence and helps heal disenfranchised communities with therapy and job resources. Helped resolve multi-brand web accessibility issues by using APIs. This change directly decreased media storage and hosting costs by 50%",

@@ -10,10 +10,8 @@
 }
 
 .qr {
-    display: flex;
-    height: 4em;
-    width: auto;
-    align-self: center;
+    display: none;
+    
 }
 
 .icon1{
@@ -33,6 +31,7 @@
 
 .txt {
     font-size: .8em;
+    line-height: 1.8em;
 }
 
 .contact{ 
@@ -48,8 +47,38 @@ h1 {
     font-size:2rem ;
 }
 
-.--tech, .--lang, .--other {
-    padding: .3em 0;
+.--tech, .--lang, .--other, .--cloud-computing {
+    padding: 0;
     margin: 0;
-    line-height: 1.5em;
+
 }
+
+.ul {
+    padding-right: 0;
+    padding-inline-start: 1rem;
+}
+
+.tools {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.list-container {
+    padding: 0;
+    padding-inline-start: 1.8rem;
+    margin: .25em;
+}
+
+.contact > a {
+    color: #191434;
+}
+
+@media only screen and (min-device-width: 1281px) 
+{
+    .qr {
+        display: flex;
+        height: 4em;
+        width: auto;
+        align-self: center;
+    }
+  }

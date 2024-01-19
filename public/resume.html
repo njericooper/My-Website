@@ -34,31 +34,26 @@
     <!-- End Google Tag Manager (noscript) -->
     <div id="app" class="app-body">
         <div class="top" id="app">         
-            <img :src= "icon1" :alt="icon1Alt" class="icon1">
-            <h1>{{ name }}</h1>
+            <img alt="" class="icon1" src="https://images.unsplash.com/photo-1635776063043-ab23b4c226f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=50">
+            <h1>N. Anderson Cooper</h1>
         </div>
  
-        <h2 class="contact">{{ contact }}</h2>
+        <h2 class="contact"> <a href="mailto:hello@njeri.codes"></a>hello@njeri.codes | 517-858-2899 | <a href="https://njeri.codes">Website https://njeri.codes</a></h2>
         <h1>Summary</h1>
-        <p class="txt">{{ summary }}</p>
+            <p class="txt">Self-driven software engineer. Focused on Javascript, Python, cloud technologies, and DevOps. I'm most enthusiastic about solving problems from a full stack perspective.</p>
         <h1>Experience</h1>
-        <h2 class="sub-hdr">{{ currentJob }}</h2>
-        <p class="txt">{{ currentDesc}}</p>
-        <h2 class="sub-hdr">{{ freelance }}</h2>
-        <p class="txt">{{ freelanceDesc}}</p>
-        <h2 class="sub-hdr">{{ prevJob1 }}</h2>
-        <p class="txt">{{ prevJob1Desc }}</p>
+        <h2 class="sub-hdr">Web Developer, Youth Villages | 2021-Present</h2>
+        <p class="txt">Lead web developer on a local government-backed project that reduces gun violence and helps heal disenfranchised communities with therapy and job resources. Helped resolve multi-brand web accessibility issues by using APIs. This change directly decreased media storage and hosting costs by 50%.</p>
+        <h2 class="sub-hdr">Freelance Software Developer (Serverless) | 2018-Present</h2>
+        <p class="txt">Building quality web sites and web apps for clients in a timely manner utilizing WordPress, Gatsby, Eleventy, MERNStack</p>
+        <h2 class="sub-hdr">UI / UX / Mobile Developer, St. Jude | 2016-2018</h2>
+        <p class="txt">Led the planning, design, development, testing,and production deployment process for a new iteration for St.Jude's mobile app utilizing Apple's User Interface guidelines to set the tone for the design system and swift.The impact of this while launching it in partnership with Twitch totaled to $11 million raised for St.Jude.</p>
         <h1>Skills</h1>
-        <p class="txt">{{ skills }}</p>
-        <p class="txt --tech">{{ technologies }}</p>
-        <p class="txt --lang">{{ languages }}</p>
-        <p class="txt --other">{{ other }}</p>
-       <img :src="qrCode" :alt="qrCodeAlt" class="qr">
+        <p class="txt">(SMACSS, BEM, Build Tools), ES6 and Human Interaction Design.</p>
+        <p class="txt --tech">Technologies: React, Vue, Node, MySQL, WordPress, Gatsby, jQuery, Microsoft Power BI, Adobe Creative Suite, git, GitHub Actions</p>
+        <p class="txt --lang">Languages: JavaScript, PHP, HTML, CSS</p>
+        <p class="txt --other">Other: CRMs, DonorDrive, SalesForce MC, APIs, CDNs, CI/CD</p>
+       <img alt="" class="qr" src="https://ucarecdn.com/3ce559f5-2718-4b38-af18-e2d653f27542/-/preview/586x270/-/quality/smart/-/format/auto/">
     </div>
-    <script src="./assets/scripts/resume.js"></script>
-    <script>
-        const mountedApp = app.mount('#app')
-    </script>
-
 </body>
 </html>

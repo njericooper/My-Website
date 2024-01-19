@@ -24,3 +24,10 @@ const app = Vue.createApp({
         }
     }
 })
+
+/* paste at bottom of html div in body tag 
+
+    <script src="./assets/scripts/resume.js"></script>
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>*/

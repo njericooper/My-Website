@@ -1,7 +1,7 @@
 ---
 # Njeri Cooper
 
-[Email: hello@njeri.codes](mailto:hello@njeri.codes)
+[Tel 517-858-2899](tel:15178582899)| | [Email: hello@njeri.codes][def]
 ---
 
 ## Technical Skills
@@ -32,3 +32,5 @@ Integrated server load-balancing, reducing hosting costs by 50% annually
 
 - Led development and testing for a new iteration of St.Jude's iOS mobile app
 - Was on a development team that launched a campaign in partnership with Twitch that raised $11 million its first year
+
+[def]: mailto:hello@njeri.codes

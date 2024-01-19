@@ -2,11 +2,22 @@
 
 .top {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column;
     margin: 2em 0;
     align-items: baseline;
     justify-self: flex-start;
     align-self: flex-start;
+}
+
+.top-row{
+    display: flex;
+    flex-flow: row nowrap; 
+}
+
+.job{
+    margin: .5erm;
+    text-transform: uppercase;
+    font-size: 1.5rem;
 }
 
 .qr {
@@ -71,6 +82,7 @@ h1 {
 
 .contact > a {
     color: #191434;
+    white-space: nowrap;
 }
 
 @media only screen and (min-device-width: 1281px) 

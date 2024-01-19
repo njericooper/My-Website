@@ -1,7 +1,9 @@
 ---
 # Njeri Cooper
 
-[Tel 517-858-2899](tel:15178582899)| |[Email: hello@njeri.codes]|| (mailto:hello@njeri.codes) || [Portfolio: https://njeri.codes/](https://njeri.codes/)
+[Tel 517-858-2899](tel:15178582899)
+[Email: hello@njeri.codes] (mailto:hello@njeri.codes)
+[Portfolio: https://njeri.codes/](https://njeri.codes/)
 ---
 
 ## Technical Skills

@@ -20,7 +20,7 @@
 ### WEB DEVELOPER, YOUTH VILLAGES | 2021-PRESENT
 
 - Collaborate with cross-functional teams and project stakeholders to design and develop website and mobile app solutions that raise $10 million each year
-- Create and maintain cloud-based development, staging, and production environments, resulting in transparencey throughout the development cycle.
+- Create and maintain cloud-based development, staging, and production environments, resulting in transparency throughout the development cycle.
 Integrated server load-balancing, reducing hosting costs by 50% annually
 - Create and maintain documentation for software solutions, including manuals, technical specifications, and troubleshooting guides
 - Reporting on monthly and annual KPIs using GA4 and Chrome Developer tools

@@ -12,8 +12,8 @@
 
 - Node.js, MySQL, WordPress, git, GitHub, APIs
 - Languages: JavaScript PHP Python HTML CSS
-- Cloud Computing: Digital Ocean, Google Cloud Functions, Google Analytics (GA4), Docker, Apache, Nginix
-- Other: CRMs, DonorDrive, CDNs, Continuious Integration / Continuious Development
+- Cloud Computing: Digital Ocean, Google Cloud Functions, Google Analytics (GA4), Docker, Apache, Nginx
+- Other: CRMs, DonorDrive, CDNs, Continuous Integration / Continuous Development
 
 ## Experience
 

@@ -22,7 +22,7 @@ body{
     background-color:#FEF0F0;
     border-bottom: 5px solid #3E6897;
     border-top: 5px solid #3E6897;
-    width: 100vw;
+    width: 100%;
     padding: 2rem;
     margin: 3rem 0 3rem 0;
 }
@@ -46,6 +46,7 @@ header {
     font-size: 1rem;
     text-align: center;
     background-color: #fffff2;
+
 }
 
 .btn {
